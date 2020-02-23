@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/et_tts_text"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_tts_text_background"
+            android:gravity="left|top"
+            android:hint="请输入文本"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btn_tts"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/selector_button_background"
+            android:text="合成"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/draw_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <com.shijiwei.life.widget.SeekBar
+            android:id="@+id/sb_volume"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:label="合成音量" />
+
+        <com.shijiwei.life.widget.SeekBar
+            android:id="@+id/sb_speed"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:label="合成语速" />
+
+        <com.shijiwei.life.widget.SeekBar
+            android:id="@+id/sb_pitch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:label="合成语调" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="文件路径"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_file_path"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="请输入文件路径"
+                android:singleLine="true"
+                android:text="TTs/tts"
+                android:textColor="@color/text_333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text=".wav"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="发  音  人"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_voicer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="小米"
+                android:textColor="@color/text_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

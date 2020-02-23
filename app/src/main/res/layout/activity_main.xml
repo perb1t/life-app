@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+
+    <com.shijiwei.life.widget.CornerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/slogan" />
+
+    </com.shijiwei.life.widget.CornerFrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="40dp">
+
+
+        <com.shijiwei.life.widget.CornerFrameLayout
+            android:id="@+id/btn_tts"
+            android:layout_width="130dp"
+            app:radius="10dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="文本转语音"
+                android:textColor="@color/white" />
+
+        </com.shijiwei.life.widget.CornerFrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_merge"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="合并"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

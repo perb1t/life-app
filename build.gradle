@@ -1,0 +1,59 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    rxjavaVersion = '2.2.14'
+    rxandroidVersion = '2.1.1'
+    rxActivityResultVersion = '0.4.5-2.x'
+    daggerVersion = '2.24'
+    retrofitVersion = '2.6.1'
+
+    butterknifeVersion = '9.0.0'
+    barlibraryVersion = '2.2.9'
+    rxpermissionsVersion = '0.10.2'
+}
+
+ext {
+
+    rxjava = "io.reactivex.rxjava2:rxjava:${rxjavaVersion}"
+    rxandroid = "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}"
+    rxActivityResult = "com.github.VictorAlbertos:RxActivityResult:${rxActivityResultVersion}"
+
+    dagger = "com.google.dagger:dagger:${daggerVersion}"
+    daggerCompiler = "com.google.dagger:dagger-compiler:${daggerVersion}"
+    daggerAndroidSupport = "com.google.dagger:dagger-android-support:${daggerVersion}"
+    daggerProcessor = "com.google.dagger:dagger-android-processor:${daggerVersion}"
+
+    retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+
+    butterknife = "com.jakewharton:butterknife:${butterknifeVersion}"
+    butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+    barlibrary = "com.gyf.barlibrary:barlibrary:${barlibraryVersion}"
+    rxpermissions = "com.github.tbruyelle:rxpermissions:${rxpermissionsVersion}"
+}
