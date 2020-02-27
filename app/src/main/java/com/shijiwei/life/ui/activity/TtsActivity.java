@@ -219,11 +219,17 @@ public class TtsActivity extends BaseActivity implements TtsView, SeekBar.Callba
   }
 
   @Override
-  public void initConfig() {}
+  public void initConfig() {
+
+  }
 
   @Override
-  public void showLoading() {}
+  public void showLoading() {
+
+  }
 
   @Override
-  public void hideLoading() {}
+  public void hideLoading() {
+
+  }
 }

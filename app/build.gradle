@@ -27,6 +27,17 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+
+    flavorDimensions "env"
+    productFlavors{
+        dev {
+            dimension "env"
+        }
+
+        prod{
+            dimension "env"
+        }
+    }
 }
 
 dependencies {
