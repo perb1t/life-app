@@ -51,6 +51,9 @@ ext {
     daggerProcessor = "com.google.dagger:dagger-android-processor:${daggerVersion}"
 
     retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    rxCallAdapter = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    moshiConvertAdapter = "com.squareup.retrofit2:converter-moshi:${retrofitVersion}"
+    okhttplogging = "com.squareup.okhttp3:logging-interceptor:3.4.1"
 
     butterknife = "com.jakewharton:butterknife:${butterknifeVersion}"
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:${butterknifeVersion}"

@@ -1,5 +1,6 @@
 package com.shijiwei.life.di.module;
 
+import com.shijiwei.life.ui.activity.ListWidgetActivity;
 import com.shijiwei.life.ui.activity.MainActivity;
 import com.shijiwei.life.ui.activity.TtsActivity;
 
@@ -14,4 +15,7 @@ public abstract class ActivityModule {
 
     @ContributesAndroidInjector
     abstract TtsActivity bindTtsActivity();
+
+    @ContributesAndroidInjector
+    abstract ListWidgetActivity bindListWidgetActivity();
 }

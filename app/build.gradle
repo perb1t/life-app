@@ -65,4 +65,7 @@ dependencies {
     annotationProcessor rootProject.ext.daggerProcessor
 
     implementation rootProject.ext.retrofit
+    implementation rootProject.ext.rxCallAdapter
+    implementation rootProject.ext.moshiConvertAdapter
+    implementation rootProject.ext.okhttplogging
 }
