@@ -26,6 +26,10 @@ android {
         main {
             jniLibs.srcDirs = ['libs']
         }
+
+        prod {
+            manifest.srcFile "Android"
+        }
     }
 
     flavorDimensions "env"

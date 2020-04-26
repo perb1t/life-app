@@ -1,25 +1,17 @@
 package com.shijiwei.life.di.module;
 
-import android.util.Log;
-
 import com.shijiwei.life.app.LifeApplication;
 import com.shijiwei.life.utils.rx.ErrorHandler;
 import com.shijiwei.life.utils.rx.RxErrorCallAdapter;
-
-import java.io.IOException;
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
 import io.reactivex.plugins.RxJavaPlugins;
-import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.moshi.MoshiConverterFactory;
 
 @Module
