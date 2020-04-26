@@ -1,5 +1,6 @@
 package com.shijiwei.life.di.module;
 
+import com.shijiwei.life.ui.activity.CarListActivity;
 import com.shijiwei.life.ui.activity.ListWidgetActivity;
 import com.shijiwei.life.ui.activity.MainActivity;
 import com.shijiwei.life.ui.activity.TtsActivity;
@@ -18,4 +19,7 @@ public abstract class ActivityModule {
 
     @ContributesAndroidInjector
     abstract ListWidgetActivity bindListWidgetActivity();
+
+    @ContributesAndroidInjector
+    abstract CarListActivity bindCarListActivity();
 }

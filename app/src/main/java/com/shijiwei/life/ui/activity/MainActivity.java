@@ -93,20 +93,7 @@ public class MainActivity extends BaseActivity implements MainView {
 
     @OnClick(R.id.btn_merge)
     public void navigateToMerge() {
-        Observable.just(2).flatMap(new Function<Integer, ObservableSource<?>>() {
-            @Override
-            public ObservableSource<?> apply(Integer integer) throws Exception {
-                RxBus.getDefault().post("12345");
-                return null;
-            }
-        }).subscribe(new Consumer<Object>() {
-            @Override
-            public void accept(Object o) throws Exception {
-                Log.e("====accept", o.toString());
-            }
-        });
-
-        startActivity(new Intent(this, ListWidgetActivity.class));
+        startActivity(new Intent(this, CarListActivity.class));
     }
 
     @Override
